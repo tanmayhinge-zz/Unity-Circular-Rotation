@@ -29,13 +29,4 @@ public class CircularMovement : MonoBehaviour
             angle = 0f;
     }
     
-    //below this line can be neglected 
-    void OnTriggerEnter2D(Collider2D target)
-    {
-        if (target.tag == "Bounce" || target.tag == "Enemy")
-        {
-            moveDown = !moveDown;
-        }
-
-    }
 }
